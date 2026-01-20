@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(skyblue,rgb(165, 214, 233),rgb(206, 230, 239));
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+          
+         
+        }
+        h1{
+            color: hotpink;
+            /* font: 2em sans-serif; */
+            /* margin: 2px auto; */
+            text-align: center;
+            margin-top: 10px;
+        }
+        .sunPart{   
+            display: flex;
+            justify-content: end;
+        }
+        #sun{
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(red,orange,yellow);
+            margin-right: 30px;
+            border-radius: 50%;
+            transition: 0s;
+            animation: rotate 8s infinite;
+            /* transition-duration: 2s; */
+            
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0px);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        .grass{
+            height: 20vh;
+            width: 100%;
+            margin: 60vh auto 0px ;
+            background-color: green;
+        }
+        .balloons{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* height: 30vh; */
+        }
+        #B1{
+            /* position: absolute; */
+            height: 100px;
+            width: 60px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+        #B2{
+            /* position: absolute; */
+            height: 100px;
+            width: 60px;
+            background-color: rgb(209, 241, 25);
+            border-radius: 50%;
+        }
+        #B3{
+            /* position: absolute; */
+            height: 100px;
+            width: 60px;
+            background-color: rgb(255, 0, 136);
+            border-radius: 50%;
+        }
+        #B4{
+            /* position: absolute; */
+            height: 100px;
+            width: 60px;
+            background-color: rgb(223, 39, 26);
+            border-radius: 50%;
+        }
+        #B5{
+            /* position: absolute; */
+            height: 100px;
+            width: 60px;
+            background-color: rgb(255, 72, 0);
+            border-radius: 50%;
+        }
+        #B6{
+            /* position: absolute; */
+            height: 100px;
+            width: 60px;
+            background-color: rgb(17, 245, 74);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO BALLON FESTIVAL</h1>
+    <div class="sunPart">
+        <div id="sun"></div>
+    </div>
+    <div class="balloons">
+        <div id="B1"></div>
+        <div id="B2"></div>
+        <div id="B3"></div>
+        <div id="B4"></div>
+        <div id="B5"></div>
+        <div id="B6"></div>
+    </div>
+    <div class="grass"></div>
+    
+</body>
+</html>
