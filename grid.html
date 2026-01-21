@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(pink);
+        }
+
+        #parent {
+            height: 500px;
+            width: 800px;
+            border: 1px solid;
+            /* background-color: chocolate; */
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px;
+            margin: 10px auto;
+
+
+        }
+
+        .child {
+            border: 1px solid;
+        }
+
+        #one {
+            background-color: aqua;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+        }
+
+        #two {
+            background-color: brown;
+        }
+
+        #three {
+            background-color: chartreuse;
+        }
+
+        #four {
+            background-color: black;
+        }
+
+        #five {
+            background-color: pink;
+        }
+
+        #seven {
+            background-color: rebeccapurple;
+        }
+
+        #eight {
+            background-color: crimson;
+        }
+
+        #nine {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="one" class="child">1</div>
+
+        <div id="two" class="child">2</div>
+
+        <div id="three" class="child">3</div>
+
+        <div id="four" class="child">4</div>
+
+        <div id="five" class="child">5</div>
+        <div id="seven" class="child">6</div>
+        <div id="eight" class="child">8</div>
+        <div id="nine" class="child">9</div>
+        <div id="ten" class="child">10</div>
+
+
+
+
+    </div>
+</body>
+
+</html>
