@@ -1,17 +1,3 @@
-let frm=document.querySelector("#formData");
-frm.addEventListener("submit",(e)=>{
-    e.preventDefault();
-     let data={
-    name:frm[0].value,
-    email:frm[1].value,
-    pass:frm[2].value
-    };
-    localStorage.setItem("fromdata",JSON.stringify(data));  
-});
-
-
-
-
 
    let formData= document.querySelector("#formData")
    formData.addEventListener("submit",(e)=>{
